@@ -1,0 +1,564 @@
+{
+  "compatibilityLevel": 1550,
+  "model": {
+    "annotations": [
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "0"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.137.952.0 (24.10)"
+      },
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"public credit_card\",\"public customer\"]"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
+      }
+    ],
+    "culture": "en-US",
+    "cultures": [
+      {
+        "name": "en-US",
+        "linguisticMetadata": {
+          "content": {
+            "Language": "en-US",
+            "Version": "1.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "relationships": [
+      {
+        "name": "AutoDetected_40b9c6dd-8adf-4f96-a5c0-34d85e886421",
+        "crossFilteringBehavior": "bothDirections",
+        "fromCardinality": "one",
+        "fromColumn": "Client_Num",
+        "fromTable": "public customer",
+        "toColumn": "Client_Num",
+        "toTable": "public credit_card"
+      }
+    ],
+    "sourceQueryCulture": "en-US",
+    "tables": [
+      {
+        "name": "public credit_card",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Client_Num",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "3ea75bf1-816e-4d14-98dc-091d6d0f4b7a",
+            "sourceColumn": "Client_Num",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Card_Category",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "53cb7964-8a46-4c16-9029-d1a8e7f0e4cf",
+            "sourceColumn": "Card_Category",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Annual_Fees",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "fa8b9ead-f569-4bc9-aea8-141a940ed203",
+            "sourceColumn": "Annual_Fees",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Activation_30_Days",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "523aaa06-69a8-4689-98ba-7378cb9cbdf3",
+            "sourceColumn": "Activation_30_Days",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Customer_Acq_Cost",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "cd0dd00e-9d0e-4aa9-8d5f-2cf2fb5aa73b",
+            "sourceColumn": "Customer_Acq_Cost",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Week_Start_Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "4b50d980-f773-4c18-9828-2dbd82ab591f",
+            "sourceColumn": "Week_Start_Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Week_Num",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "6b0d699d-5599-45b3-bf04-bae10a4022de",
+            "sourceColumn": "Week_Num",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Qtr",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "bd484f90-c8c9-4c7d-9bab-f9bea03e97bd",
+            "sourceColumn": "Qtr",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "current_year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "fd642cfc-b434-485d-802e-4a609e9f2443",
+            "sourceColumn": "current_year",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Credit_Limit",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "a3b93cfa-9174-4406-956d-49e41d84f382",
+            "sourceColumn": "Credit_Limit",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Total_Revolving_Bal",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "677ad419-1ad0-4723-811a-e46b155e243e",
+            "sourceColumn": "Total_Revolving_Bal",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Total_Trans_Amt",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "1ff11a2f-a2b5-4abf-8aa4-214967fd9e49",
+            "sourceColumn": "Total_Trans_Amt",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Total_Trans_Vol",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "c67262a8-476d-4b7a-818e-9acd64f42587",
+            "sourceColumn": "Total_Trans_Vol",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Avg_Utilization_Ratio",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "6d5c12f4-7764-4f16-9e0f-2d6d7c9abaea",
+            "sourceColumn": "Avg_Utilization_Ratio",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Use Chip",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "5139c9ee-6999-4284-86df-27ac64cdea20",
+            "sourceColumn": "Use Chip",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Exp Type",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "34b18510-0ff8-4838-98fb-6febb22001c4",
+            "sourceColumn": "Exp Type",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Interest_Earned",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "770cab63-e65f-402c-96df-31309a6e770f",
+            "sourceColumn": "Interest_Earned",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Delinquent_Acc",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "8a125894-b133-44e4-9492-9d730099e4d1",
+            "sourceColumn": "Delinquent_Acc",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "1bef8bbf-8d33-4617-b44e-1b72a732fbc1",
+        "partitions": [
+          {
+            "name": "public credit_card",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = PostgreSQL.Database(\"localhost\", \"CC_data\"),",
+                "    public_credit_card = Source{[Schema=\"public\",Item=\"credit_card\"]}[Data]",
+                "in",
+                "    public_credit_card"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "public customer",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Client_Num",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "d791397d-ef69-4a3e-9a1d-1ea268cd5652",
+            "sourceColumn": "Client_Num",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Customer_Age",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "f4be9874-c72a-44b1-8d7f-fb119051cc37",
+            "sourceColumn": "Customer_Age",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gender",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "0f7a1f08-bb03-4271-b639-d74ae3515d8e",
+            "sourceColumn": "Gender",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Dependent_Count",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "7761dad8-6cde-443b-bc49-23f7a906624c",
+            "sourceColumn": "Dependent_Count",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Education_Level",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "d2027937-7717-4900-afca-7c044b2b6397",
+            "sourceColumn": "Education_Level",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Marital_Status",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "4e868bce-e00f-45fc-9282-767c888f6202",
+            "sourceColumn": "Marital_Status",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "state_cd",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "dc4156b9-3071-4dc1-a569-ce6a508b128b",
+            "sourceColumn": "state_cd",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Zipcode",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "936679aa-f7e5-4e6b-80db-82f8110e3e87",
+            "sourceColumn": "Zipcode",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Car_Owner",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "38d1234b-7cc3-4ee6-b59e-d1c444c8b114",
+            "sourceColumn": "Car_Owner",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "House_Owner",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "5c9a2e1b-91e1-4858-b700-c4596787b73d",
+            "sourceColumn": "House_Owner",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Personal_loan",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "283257f7-2a6d-4f75-8789-3cbdde1b798d",
+            "sourceColumn": "Personal_loan",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "contact",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "4ec9e23a-cbf9-4431-a11a-fec991f5cc11",
+            "sourceColumn": "contact",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Customer_Job",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "a8ac9f18-6b74-450a-89c8-3c0638e98f76",
+            "sourceColumn": "Customer_Job",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Income",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "eac8892f-689a-4a2a-b4de-6b08a3afcdf7",
+            "sourceColumn": "Income",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Cust_Satisfaction_Score",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "97b44eff-f7e2-47d5-b2e2-8fec502d9564",
+            "sourceColumn": "Cust_Satisfaction_Score",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "b96ea1f6-7a48-4590-9366-9abc24253439",
+        "partitions": [
+          {
+            "name": "public customer",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = PostgreSQL.Database(\"localhost\", \"CC_data\"),",
+                "    public_customer = Source{[Schema=\"public\",Item=\"customer\"]}[Data]",
+                "in",
+                "    public_customer"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
