@@ -1,5 +1,5 @@
 {
-  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.59\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.59\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
   "layoutOptimization": 0,
   "resourcePackages": [
     {
@@ -20,13 +20,143 @@
   "sections": [
     {
       "config": "{}",
-      "displayName": "Page 1",
+      "displayName": "Transaction",
       "displayOption": 1,
       "filters": "[]",
-      "height": 720.00,
+      "height": 1080.00,
       "name": "8433b9dc5c0174c68063",
-      "visualContainers": [],
-      "width": 1280.00
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"37a19d6f866cd17399ba\",\"layouts\":[{\"id\":0,\"position\":{\"x\":904.3116883116883,\"y\":731.4285714285714,\"z\":1009,\"width\":458.8051948051948,\"height\":304.2077922077922,\"tabOrder\":1009}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"_measures.Revenue\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Revenue\"},\"Name\":\"_measures.Revenue\",\"NativeReferenceName\":\"Revenue\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"labels\":[{\"properties\":{\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 304.21,
+          "width": 458.81,
+          "x": 904.31,
+          "y": 731.43,
+          "z": 1009.00
+        },
+        {
+          "config": "{\"name\":\"3943ced29a36e9ae00d0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":292.57142857142856,\"y\":0,\"z\":1002,\"width\":241.03896103896105,\"height\":229.4025974025974,\"tabOrder\":1002}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"_measures.Total Customer\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Total Customer\"},\"Name\":\"_measures.Total Customer\",\"NativeReferenceName\":\"Total Customer\"}]},\"autoSelectVisualType\":true,\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 229.40,
+          "width": 241.04,
+          "x": 292.57,
+          "y": 0.00,
+          "z": 1002.00
+        },
+        {
+          "config": "{\"name\":\"49208acf666cb8b4eb6e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":620.0519480519481,\"z\":1003,\"width\":658.2857142857143,\"height\":460.46753246753246,\"tabOrder\":1003}}],\"singleVisual\":{\"visualType\":\"lineStackedColumnComboChart\",\"projections\":{\"Y\":[{\"queryRef\":\"_measures.Revenue\"}],\"Y2\":[{\"queryRef\":\"_measures.Total Trans Count\"}],\"Category\":[{\"queryRef\":\"DimDate.Quarter Name\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_measures\",\"Type\":0},{\"Name\":\"c\",\"Entity\":\"Customer_data\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"DimDate\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Revenue\"},\"Name\":\"_measures.Revenue\",\"NativeReferenceName\":\"Revenue\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Total Trans Count\"},\"Name\":\"_measures.Total Trans Count\",\"NativeReferenceName\":\"Total Trans Count\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Quarter Name\"},\"Name\":\"DimDate.Quarter Name\",\"NativeReferenceName\":\"Quarter Name\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Age_Group\"}}}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 460.47,
+          "width": 658.29,
+          "x": 0.00,
+          "y": 620.05,
+          "z": 1003.00
+        },
+        {
+          "config": "{\"name\":\"4d8c0b3c692941722e30\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1562.5974025974026,\"y\":142.96103896103895,\"z\":1008,\"width\":357.4025974025974,\"height\":937.5584415584416,\"tabOrder\":1008}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"DimDate.Week Name\",\"active\":true}],\"Values\":[{\"queryRef\":\"_measures.Revenue\"},{\"queryRef\":\"_measures.Previous Week Rev\"},{\"queryRef\":\"_measures.WoW %\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DimDate\",\"Type\":0},{\"Name\":\"_\",\"Entity\":\"_measures\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Week Name\"},\"Name\":\"DimDate.Week Name\",\"NativeReferenceName\":\"Week Name\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Revenue\"},\"Name\":\"_measures.Revenue\",\"NativeReferenceName\":\"Revenue\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Previous Week Rev\"},\"Name\":\"_measures.Previous Week Rev\",\"NativeReferenceName\":\"Previous Week_Rev\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"WoW %\"},\"Name\":\"_measures.WoW %\",\"NativeReferenceName\":\"WoW %\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Week Name\"}}}]},\"expansionStates\":[{\"roles\":[\"Rows\"],\"levels\":[{\"queryRefs\":[\"DimDate.Week Name\"],\"isCollapsed\":true,\"isPinned\":true}],\"root\":{\"identityValues\":null}}],\"columnProperties\":{\"_measures.Previous Week Rev\":{\"displayName\":\"Previous Week_Rev\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"subTotals\":[{\"properties\":{\"columnSubtotals\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"rowSubtotals\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"grid\":[{\"properties\":{\"outlineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"rowPadding\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}},\"gridHorizontalColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"87.2987012987013D\"}}}},\"selector\":{\"metadata\":\"_measures.Revenue\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"107.29429518022425D\"}}}},\"selector\":{\"metadata\":\"_measures.Previous Week Rev\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"80.61089359559712D\"}}}},\"selector\":{\"metadata\":\"_measures.WoW %\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"62.05194805194805D\"}}}},\"selector\":{\"metadata\":\"DimDate.Week Name\"}}]},\"vcObjects\":{\"stylePreset\":[{\"properties\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'Minimal'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 937.56,
+          "width": 357.40,
+          "x": 1562.60,
+          "y": 142.96,
+          "z": 1008.00
+        },
+        {
+          "config": "{\"name\":\"703fe96c867050d78b08\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1009.038961038961,\"y\":24.935064935064936,\"z\":1007,\"width\":402.2857142857143,\"height\":64.83116883116882,\"tabOrder\":1007}}],\"singleVisual\":{\"visualType\":\"advancedSlicerVisual\",\"projections\":{\"Values\":[{\"queryRef\":\"DimDate.Quarter Name\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DimDate\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Quarter Name\"},\"Name\":\"DimDate.Quarter Name\",\"NativeReferenceName\":\"Quarter Name\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"layout\":[{\"properties\":{\"rowCount\":{\"expr\":{\"Literal\":{\"Value\":\"4L\"}}},\"columnCount\":{\"expr\":{\"Literal\":{\"Value\":\"4L\"}}}}}],\"value\":[{\"properties\":{\"horizontalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}},\"selector\":{\"id\":\"default\"}}],\"general\":[{\"properties\":{}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 64.83,
+          "width": 402.29,
+          "x": 1009.04,
+          "y": 24.94,
+          "z": 1007.00
+        },
+        {
+          "config": "{\"name\":\"8df56d098b420c3deaa1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":658.2857142857143,\"y\":24.935064935064936,\"z\":1004,\"width\":377.35064935064935,\"height\":147.94805194805195,\"tabOrder\":1004}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"_measures.Avg rev per trans\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Avg rev per trans\"},\"Name\":\"_measures.Avg rev per trans\",\"NativeReferenceName\":\"Avg rev per trans\"}]},\"autoSelectVisualType\":true,\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 147.95,
+          "width": 377.35,
+          "x": 658.29,
+          "y": 24.94,
+          "z": 1004.00
+        },
+        {
+          "config": "{\"name\":\"b4613aee3b00e104744b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":41.55844155844156,\"z\":1005,\"width\":207.7922077922078,\"height\":149.6103896103896,\"tabOrder\":1005}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"_measures.Revenue\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Revenue\"},\"Name\":\"_measures.Revenue\",\"NativeReferenceName\":\"Revenue\"}]},\"autoSelectVisualType\":true,\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 149.61,
+          "width": 207.79,
+          "x": 0.00,
+          "y": 41.56,
+          "z": 1005.00
+        }
+      ],
+      "width": 1920.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Demographic",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 1080.00,
+      "name": "c7171de013b72880b30b",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"5ff894131ac090082b44\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1265.0389610389611,\"y\":0,\"z\":0,\"width\":405.61038961038963,\"height\":146.28571428571428,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"public customer.Income_Group\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"Customer_data\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Income_Group\"},\"Name\":\"public customer.Income_Group\",\"NativeReferenceName\":\"Income_Group\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Income_Group\"}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 146.29,
+          "width": 405.61,
+          "x": 1265.04,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"77e351c3e3ed4dab1805\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":181.19480519480518,\"z\":3000,\"width\":610.077922077922,\"height\":540.2597402597403,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"DimDate.Dates\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(public credit_card.Activation_30_Days)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DimDate\",\"Type\":0},{\"Name\":\"p\",\"Entity\":\"CC_Trans\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Dates\"},\"Name\":\"DimDate.Dates\",\"NativeReferenceName\":\"Dates\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Activation_30_Days\"}},\"Function\":0},\"Name\":\"Sum(public credit_card.Activation_30_Days)\",\"NativeReferenceName\":\"Sum of Activation_30_Days\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Dates\"}}}]},\"autoSelectVisualType\":true,\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 540.26,
+          "width": 610.08,
+          "x": 0.00,
+          "y": 181.19,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"b21265b03d41d73365ad\",\"layouts\":[{\"id\":0,\"position\":{\"x\":241.03896103896105,\"y\":73.14285714285714,\"z\":1000,\"width\":300.8831168831169,\"height\":108.05194805194805,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"public customer.Car_Owner\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"Customer_data\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Car_Owner\"},\"Name\":\"public customer.Car_Owner\",\"NativeReferenceName\":\"Car_Owner\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Car_Owner\"}}}]},\"autoSelectVisualType\":true,\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 108.05,
+          "width": 300.88,
+          "x": 241.04,
+          "y": 73.14,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"c3a5c94453dc7d0e5369\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":721,\"width\":610,\"height\":313,\"z\":4001,\"tabOrder\":4001}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"public customer.Age_Group\"}],\"Y\":[{\"queryRef\":\"_measures.Total Customer\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"Customer_data\",\"Type\":0},{\"Name\":\"_\",\"Entity\":\"_measures\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Age_Group\"},\"Name\":\"public customer.Age_Group\",\"NativeReferenceName\":\"Age_Group\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Total Customer\"},\"Name\":\"_measures.Total Customer\",\"NativeReferenceName\":\"Total Customer\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Total Customer\"}}}]},\"autoSelectVisualType\":true,\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 313.00,
+          "width": 610.00,
+          "x": 0.00,
+          "y": 721.00,
+          "z": 4001.00
+        },
+        {
+          "config": "{\"name\":\"cdfe203030c5ab1aa20d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1383.064935064935,\"y\":452.15584415584414,\"z\":4000,\"width\":447.16883116883116,\"height\":581.8181818181819,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"scatterChart\",\"projections\":{\"X\":[{\"queryRef\":\"Sum(public credit_card.Customer_Acq_Cost)\",\"active\":true}],\"Category\":[{\"queryRef\":\"public customer.Age_Group\",\"active\":true}],\"Y\":[{\"queryRef\":\"_measures.Revenue\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p1\",\"Entity\":\"CC_Trans\",\"Type\":0},{\"Name\":\"p\",\"Entity\":\"Customer_data\",\"Type\":0},{\"Name\":\"_\",\"Entity\":\"_measures\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p1\"}},\"Property\":\"Customer_Acq_Cost\"}},\"Function\":1},\"Name\":\"Sum(public credit_card.Customer_Acq_Cost)\",\"NativeReferenceName\":\"Average of Customer_Acq_Cost\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Age_Group\"},\"Name\":\"public customer.Age_Group\",\"NativeReferenceName\":\"Age_Group\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Revenue\"},\"Name\":\"_measures.Revenue\",\"NativeReferenceName\":\"Revenue\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 581.82,
+          "width": 447.17,
+          "x": 1383.06,
+          "y": 452.16,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"e9ddb04f11eb9dc03b04\",\"layouts\":[{\"id\":0,\"position\":{\"x\":886.025974025974,\"y\":181.19480519480518,\"z\":2000,\"width\":300.8831168831169,\"height\":141.2987012987013,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"public credit_card.Card_Category\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"CC_Trans\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Card_Category\"},\"Name\":\"public credit_card.Card_Category\",\"NativeReferenceName\":\"Card_Category\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Card_Category\"}}}]},\"autoSelectVisualType\":true,\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 141.30,
+          "width": 300.88,
+          "x": 886.03,
+          "y": 181.19,
+          "z": 2000.00
+        }
+      ],
+      "width": 1920.00
     }
   ]
 }

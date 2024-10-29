@@ -4,32 +4,56 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 0,
+        "x": 40,
         "y": 0
       },
       "nodes": [
         {
           "location": {
-            "x": 294,
-            "y": -10
+            "x": 0,
+            "y": 21
           },
-          "nodeIndex": "public credit_card",
-          "nodeLineageTag": "1bef8bbf-8d33-4617-b44e-1b72a732fbc1",
+          "nodeIndex": "DimDate",
+          "nodeLineageTag": "60d12d21-e062-403c-8fbb-dd11dc956972",
           "size": {
-            "height": 300,
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 1123,
+            "y": 299.5
+          },
+          "nodeIndex": "_measures",
+          "nodeLineageTag": "b325bb15-1531-4696-8cb0-a02050115ddd",
+          "size": {
+            "height": 104,
             "width": 234
           },
           "zIndex": 0
         },
         {
           "location": {
-            "x": 10,
-            "y": -10
+            "x": 450,
+            "y": 174
           },
-          "nodeIndex": "public customer",
-          "nodeLineageTag": "b96ea1f6-7a48-4590-9366-9abc24253439",
+          "nodeIndex": "CC_Trans",
           "size": {
-            "height": 300,
+            "height": 536,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 839,
+            "y": 126
+          },
+          "nodeIndex": "Customer_data",
+          "size": {
+            "height": 543,
             "width": 234
           },
           "zIndex": 0
