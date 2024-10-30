@@ -8,7 +8,7 @@
       },
       {
         "name": "PBIDesktopVersion",
-        "value": "2.137.952.0 (24.10)"
+        "value": "2.137.1102.0 (24.10)"
       },
       {
         "name": "PBI_QueryOrder",
@@ -7796,7 +7796,7 @@
                 "SWITCH(",
                 "    TRUE(),",
                 "    SELECTEDMEASURE() < 999, \"###\",",
-                "    SELECTEDMEASURE() < 100000, \"0.###,.00K\"",
+                "    SELECTEDMEASURE() < 100000, \"0.###,.0K\"",
                 ")"
               ]
             },
@@ -7870,6 +7870,7 @@
               "        ISFILTERED(DimDate[Quarter Name]) || ",
               "        ISFILTERED(CC_Trans[Use Chip]) || ",
               "        ISFILTERED(Customer_data[Gender]) ||",
+              "        ISFILTERED(Customer_data[Income_Group]) ||",
               "        ISFILTERED(CC_Trans[Card_Category]), 1,",
               "        0",
               "    )",
@@ -7883,6 +7884,32 @@
             "expression": "SUM(CC_Trans[Customer_Acq_Cost])",
             "formatString": "0",
             "lineageTag": "af1ce2dc-45b8-4f48-81c5-5cb90dd39432"
+          },
+          {
+            "name": "Revolving_Bucket",
+            "expression": [
+              "",
+              "    VAR bucketSize = (MAX(CC_Trans[Total_Revolving_Bal]) - MIN(CC_Trans[Total_Revolving_Bal])) / 10",
+              "    VAR Revolving_balance = SELECTEDVALUE(CC_Trans[Total_Revolving_Bal])",
+              "    VAR lowerBound = INT((Revolving_balance - MIN(CC_Trans[Total_Revolving_Bal])) / bucketSize) * bucketSize + MIN(CC_Trans[Total_Revolving_Bal])",
+              "    VAR upperBound = lowerBound + bucketSize",
+              "    VAR lowerBoundFormatted = IF(MOD(ROUND(lowerBound / 1000, 1), 1) = 0, FORMAT(ROUND(lowerBound / 1000, 1), \"0\"), FORMAT(lowerBound / 1000, \"0.0\"))",
+              "    VAR upperBoundFormatted = IF(MOD(ROUND(upperBound / 1000, 1), 1) = 0, FORMAT(ROUND(upperBound / 1000, 1), \"0\"), FORMAT(upperBound / 1000, \"0.0\"))",
+              "    RETURN",
+              "        lowerBoundFormatted &  upperBoundFormatted ",
+              ""
+            ],
+            "lineageTag": "45261346-e947-4a24-a602-755b6ce3fe2f"
+          },
+          {
+            "name": "Pct fo customer",
+            "expression": [
+              "",
+              "DIVIDE([Total Customer], ",
+              "CALCULATE([Total Customer], ALL(CC_Trans)))"
+            ],
+            "formatString": "0.0%;-0.0%;0.0%",
+            "lineageTag": "aeb4a531-cf0c-4eb4-84ac-0419d15ddea7"
           }
         ],
         "partitions": [
