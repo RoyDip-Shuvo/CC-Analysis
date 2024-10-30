@@ -3725,6 +3725,122 @@
                   }
                 ]
               },
+              "v_measures_measure.avg_credit_limit": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "_measures",
+                    "ConceptualProperty": "Avg Credit Limit"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "avg credit limit": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "average credit limit": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.591
+                    }
+                  },
+                  {
+                    "avg credit boundary": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.508
+                    }
+                  },
+                  {
+                    "avg credit perimeter": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.508
+                    }
+                  },
+                  {
+                    "avg credit bound": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "avg credit border": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "avg credit edge": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "avg credit frontier": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "avg credit threshold": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.482
+                    }
+                  },
+                  {
+                    "avg credit constraint": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.482
+                    }
+                  },
+                  {
+                    "avg credit maximum": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.468
+                    }
+                  }
+                ]
+              },
               "v_measures_measure.avg_rev": {
                 "Definition": {
                   "Binding": {
@@ -3884,68 +4000,124 @@
                   }
                 ]
               },
-              "v_measures_measure.exppppp_previous_week_rev": {
+              "v_measures_measure.credit_limit": {
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "_measures",
-                    "ConceptualProperty": "exppppp Previous Week Rev"
+                    "ConceptualProperty": "Credit limit"
                   }
                 },
                 "State": "Generated",
                 "Terms": [
                   {
-                    "exppppp previous week rev": {
+                    "credit limit": {
                       "State": "Generated"
                     }
                   },
                   {
-                    "exppppp previous week revolution": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.514
+                    "limit": {
+                      "State": "Generated",
+                      "Weight": 0.97
                     }
                   },
                   {
-                    "exppppp previous week rotation": {
+                    "credit boundary": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.514
+                      "Weight": 0.5
                     }
                   },
                   {
-                    "exppppp previous week rpm": {
+                    "credit perimeter": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.514
+                      "Weight": 0.5
                     }
                   },
                   {
-                    "exppppp previous week cycle": {
+                    "boundary": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.499
+                      "Weight": 0.491
                     }
                   },
                   {
-                    "exppppp previous week turn": {
+                    "perimeter": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.499
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "credit bound": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "credit border": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "credit edge": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "credit frontier": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "bound": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "border": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
                     }
                   }
                 ]
@@ -4349,6 +4521,212 @@
                     }
                   }
                 ]
+              },
+              "v_measures_measure.v_Previous_Week_Rev_FormatString_previous_week_rev_FormatString": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "_measures",
+                    "ConceptualProperty": "_Previous Week Rev FormatString"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "_previous week rev FormatString": {
+                      "State": "Generated"
+                    }
+                  }
+                ],
+                "Visibility": {
+                  "Value": "Hidden"
+                }
+              },
+              "v_measures_measure.v_Revenue_FormatString_revenue_FormatString": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "_measures",
+                    "ConceptualProperty": "_Revenue FormatString"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "_revenue FormatString": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "_ income formatstring": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "_ profit formatstring": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.591
+                    }
+                  },
+                  {
+                    "_ turnover formatstring": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.591
+                    }
+                  },
+                  {
+                    "_ yield formatstring": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.591
+                    }
+                  }
+                ],
+                "Visibility": {
+                  "Value": "Hidden"
+                }
+              },
+              "v_measures_measure.v_Total_Customer_FormatString_total_customer_FormatString": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "_measures",
+                    "ConceptualProperty": "_Total Customer FormatString"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "_total customer FormatString": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "_total client formatstring": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.617
+                    }
+                  },
+                  {
+                    "_total consumer formatstring": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.617
+                    }
+                  },
+                  {
+                    "_total user formatstring": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.617
+                    }
+                  },
+                  {
+                    "_total buyer formatstring": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.617
+                    }
+                  },
+                  {
+                    "_total patron formatstring": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.617
+                    }
+                  },
+                  {
+                    "_total purchaser formatstring": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.617
+                    }
+                  },
+                  {
+                    "_total shopper formatstring": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.617
+                    }
+                  },
+                  {
+                    "_ aggregate customer formatstring": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.599
+                    }
+                  },
+                  {
+                    "_ overall customer formatstring": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.599
+                    }
+                  }
+                ],
+                "Visibility": {
+                  "Value": "Hidden"
+                }
+              },
+              "v_measures_measure.v_avg_rev_FormatString_avg_rev_FormatString": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "_measures",
+                    "ConceptualProperty": "_avg_rev FormatString"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "_avg_rev FormatString": {
+                      "State": "Generated"
+                    }
+                  }
+                ],
+                "Visibility": {
+                  "Value": "Hidden"
+                }
               }
             },
             "Language": "en-US",
@@ -4993,6 +5371,39 @@
                 },
                 "State": "Generated"
               },
+              "CC_trans_has_v_measures_measure_avg_credit_limit": {
+                "Binding": {
+                  "ConceptualEntity": "CC_Trans"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "v_measures_measure.avg_credit_limit"
+                      },
+                      "Subject": {
+                        "Role": "CC_trans"
+                      }
+                    },
+                    "ID": "CC_trans_have_avg_credit_limit",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "CC_trans": {
+                    "Target": {
+                      "Entity": "CC_trans"
+                    }
+                  },
+                  "v_measures_measure.avg_credit_limit": {
+                    "Target": {
+                      "Entity": "v_measures_measure.avg_credit_limit"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "CC_trans_has_v_measures_measure_avg_rev": {
                 "Binding": {
                   "ConceptualEntity": "CC_Trans"
@@ -5059,7 +5470,7 @@
                 },
                 "State": "Generated"
               },
-              "CC_trans_has_v_measures_measure_exppppp_previous_week_rev": {
+              "CC_trans_has_v_measures_measure_credit_limit": {
                 "Binding": {
                   "ConceptualEntity": "CC_Trans"
                 },
@@ -5067,13 +5478,13 @@
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "v_measures_measure.exppppp_previous_week_rev"
+                        "Role": "v_measures_measure.credit_limit"
                       },
                       "Subject": {
                         "Role": "CC_trans"
                       }
                     },
-                    "ID": "CC_trans_have_exppppp_previous_week_rev",
+                    "ID": "CC_trans_have_credit_limit",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -5084,9 +5495,9 @@
                       "Entity": "CC_trans"
                     }
                   },
-                  "v_measures_measure.exppppp_previous_week_rev": {
+                  "v_measures_measure.credit_limit": {
                     "Target": {
-                      "Entity": "v_measures_measure.exppppp_previous_week_rev"
+                      "Entity": "v_measures_measure.credit_limit"
                     }
                   }
                 },
@@ -5981,6 +6392,39 @@
                   "v_measures_measure.av": {
                     "Target": {
                       "Entity": "v_measures_measure.av"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "customer_data_has_v_measures_measure_avg_credit_limit": {
+                "Binding": {
+                  "ConceptualEntity": "Customer_data"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "v_measures_measure.avg_credit_limit"
+                      },
+                      "Subject": {
+                        "Role": "customer_data"
+                      }
+                    },
+                    "ID": "customer_data_have_avg_credit_limit",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "customer_data": {
+                    "Target": {
+                      "Entity": "customer_data"
+                    }
+                  },
+                  "v_measures_measure.avg_credit_limit": {
+                    "Target": {
+                      "Entity": "v_measures_measure.avg_credit_limit"
                     }
                   }
                 },
@@ -7294,7 +7738,7 @@
               "expression": [
                 "SWITCH(",
                 "    TRUE(),",
-                "    SELECTEDMEASURE() > 1000000, \"$#,##0,,.00M\",",
+                "    SELECTEDMEASURE() > 1000000, \"$#,##0,,.0M\",",
                 "    SELECTEDMEASURE() > 1000, \"$#,##0,.0K\"",
                 ")"
               ]
@@ -7337,40 +7781,25 @@
             "lineageTag": "93102d0b-0913-492b-b47c-a0339353d9dd"
           },
           {
-            "name": "exppppp Previous Week Rev",
-            "annotations": [
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
-              }
-            ],
-            "expression": [
-              "",
-              "CALCULATE(",
-              "    [Revenue], ",
-              "    FILTER(",
-              "        ALL(DimDate),",
-              "        DimDate[Week of Year] = DimDate[Week of Year]+1",
-              "    )",
-              ")"
-            ],
-            "lineageTag": "27414171-14ba-4bfd-87a5-919d060d317a"
-          },
-          {
             "name": "avg_rev",
-            "annotations": [
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
-              }
-            ],
             "expression": "AVERAGEX('CC_Trans', [Revenue])",
+            "formatStringDefinition": {
+              "expression": "\"#,###,.00K\""
+            },
             "lineageTag": "c8852981-8bef-429a-ab3c-3288916afe3c"
           },
           {
             "name": "Total Customer",
             "expression": "COUNT('Customer_data'[Client_Num])",
-            "formatString": "0",
+            "formatStringDefinition": {
+              "expression": [
+                "SWITCH(",
+                "    TRUE(),",
+                "    SELECTEDMEASURE() < 999, \"###\",",
+                "    SELECTEDMEASURE() < 100000, \"0.###,.00K\"",
+                ")"
+              ]
+            },
             "lineageTag": "1b58cdcc-8b2a-4e24-986b-94d8b4cc9d3d"
           },
           {
@@ -7392,13 +7821,8 @@
           },
           {
             "name": "Avg rev per trans",
-            "annotations": [
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
-              }
-            ],
             "expression": "DIVIDE([Revenue], [Total Trans Count])",
+            "formatString": "\\$#,0.00;(\\$#,0.00);\\$#,0.00",
             "lineageTag": "89f3d188-09fb-4e0c-811c-1d37dbc33a75"
           },
           {
@@ -7424,6 +7848,41 @@
             ],
             "formatString": "0.0%;-0.0%;0.0%",
             "lineageTag": "73c0621b-60ba-4c39-8d67-25a8ef12bb11"
+          },
+          {
+            "name": "Avg Credit Limit",
+            "expression": "DIVIDE([Credit limit], [Total Customer])",
+            "formatString": "\\$#,0.00;(\\$#,0.00);\\$#,0.00",
+            "lineageTag": "c940a059-1d56-4d6b-bad6-6f6b60500724"
+          },
+          {
+            "name": "Credit limit",
+            "expression": "SUM(CC_Trans[Credit_Limit])",
+            "formatString": "0",
+            "lineageTag": "9e63c22b-bcf3-4770-ac5c-59d1a8607171"
+          },
+          {
+            "name": "SlicerCheck",
+            "expression": [
+              "",
+              "    SWITCH(",
+              "        TRUE(),",
+              "        ISFILTERED(DimDate[Quarter Name]) || ",
+              "        ISFILTERED(CC_Trans[Use Chip]) || ",
+              "        ISFILTERED(Customer_data[Gender]) ||",
+              "        ISFILTERED(CC_Trans[Card_Category]), 1,",
+              "        0",
+              "    )",
+              ""
+            ],
+            "formatString": "0",
+            "lineageTag": "d12d974e-9c3e-480b-bb92-d7aa5d26f7da"
+          },
+          {
+            "name": "Acquation Cost",
+            "expression": "SUM(CC_Trans[Customer_Acq_Cost])",
+            "formatString": "0",
+            "lineageTag": "af1ce2dc-45b8-4f48-81c5-5cb90dd39432"
           }
         ],
         "partitions": [
