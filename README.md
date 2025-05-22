@@ -5,7 +5,7 @@ This repository showcases a Credit Card Analysis Dashboard created in Power BI a
 ## Project Overview
 The dashboard is designed to help stakeholders understand customer segments and transactional behavior by providing a comprehensive view of key metrics.
 
-## [Live Dashboard](https://app.powerbi.com/view?r=eyJrIjoiZmQ2NjJmYmUtYTRhMC00N2I3LThmYWYtNDZlZTQ0MjQ3MjVhIiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9)
+## [Live Dashboard](https://app.powerbi.com/view?r=eyJrIjoiZDk5Y2E2NWQtNDJiMy00MTM1LWIwN2QtNGIzYjY3MDRlZTUxIiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9)
 
 ![Home page](https://github.com/RoyDip-Shuvo/CC-Analysis/blob/main/Image/Github/Home.jpg)
 
